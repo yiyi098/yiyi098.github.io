@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, .NavHeaderName {
   font-family: 'Georgia', Times, Times New Roman, serif;
 }
 
@@ -6,41 +6,31 @@ p, div, footer, form {
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
 
-header {
+.NavHeaderBar {
   background-color: #ffffff;
   border-color: #cccccc;
   width: 100%;
   height: 80px;
-  position: fixed;
-  z-index: 1;
   border-bottom: 2px solid #cccccc;
 }
 
-h1 {
-  font-size: 40px;
+.NavHeaderName {
+  font-size: 30px;
   color: white;
   background-color: #4aaaa5;
-  width: 200px;
-  height: 30px;
-  float: left;
-  padding: 20px;
+  padding: 16.5px;
   text-align: center;
   margin-left: 10%;
-  margin-top: 10px;
-  margin-right: 100px;
 }
 
 footer {
   position: fixed;
-  width: 100%;
-  height:25px;
-  bottom: 0;
   font-size: 10px;
   color: #C8C4B6;
   background-color: #666666;
   border-top: 7.5px solid #4aaaa5;
   text-align: center;
-  line-height: 30px;
+  line-height: 60px;
   padding: 10px;
   margin-top: 10px;
 }
@@ -52,22 +42,10 @@ footer {
   right: 17%;
 }
 
-/*.marginAndFloatFix1 {
-  float: right;
-  margin-left: 10px;
-}*/
-
 .contactFix {
   float: right;
   margin-left: 10px;
 }
-
-
-/*.marginAndFloatFix2 {
-  float: right;
-  margin-right: 10px;
-  margin-left: 10px;
-}*/
 
 .aboutFix {
   float: right;
@@ -75,20 +53,9 @@ footer {
   margin-left: 10px;
 }
 
-/*.indexBorderAndFloatFix {
-  float: right;
-  border-left: 1.5px solid #F2F2F2;
-  border-right: 1.5px solid #F2F2F2;
-  padding-left: 10px;
-  padding-right: 10px;
-}*/
-
 .portfolioFix {
-  float: right;
   border-left: 1.5px solid #F2F2F2;
   border-right: 1.5px solid #F2F2F2;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
 .content {
@@ -97,6 +64,7 @@ footer {
   float: left;
   margin-left: 10%;
   width: 960px;
+  margin-right: 10%;
 }
 
 .clearfix::after {
@@ -120,18 +88,9 @@ footer {
   float: left;
   color: #4aaaa5;
   border-bottom: 1.5px solid #F2F2F2;
-  width: 600px;
+  width: 100%;
   padding-bottom: 15px;
   margin-bottom: 20px;
-}
-
-.profileSocial {
-  background-color: #ffffff;
-  border-color: #dddddd;
-  float: right;
-  padding: 20px;
-  width: 230px;
-  height: 170px;
 }
 
 .socialHeading {
@@ -139,11 +98,8 @@ footer {
   font-weight: 700;
   color: #4aaaa5;
   border-bottom: 1.5px solid #F2F2F2;
-  padding-top: 10px;
   padding-bottom: 20px;
-  margin-bottom: 20px;
-  width: 230px;
-  text-align: center;
+  text-align: left;
 }
 
 .icons {
@@ -157,9 +113,8 @@ footer {
 /*Below are Profile Page specific*/
 .profilePic {
   float: left;
-  height: 200px;
-  width: auto;
-  margin-right: 25px;
+  width: 30%;
+  margin: 20px;
 }
 
 .profileIntro {
@@ -211,7 +166,7 @@ footer {
   position: absolute;
   bottom: 10px;
   background-color: #4aaaa5;
-  width: 100%;
+  width: 86%;
   text-align: center;
   line-height: 50px;
   color: white;
@@ -223,7 +178,7 @@ form {
   color: #919192;
   line-height: 25px;
   font-size: 20px;
-  width: 100%;
+  width: auto;
 }
 
 input {
@@ -232,10 +187,13 @@ input {
   font-size: 15px;
   margin-top: 2px;
   margin-bottom: 2px;
+  width: 575px;
 }
 
 textarea {
   margin-top: 2px;
+  width: 580px;
+  height: 200px;
 }
 
 .button {
@@ -246,6 +204,126 @@ textarea {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
+  width: 150px;
+}
+
+/*Below are Media Queries*/
+
+@media only screen and (max-width: 980px) {
+  .content {
+    width: 960px;
+  }
+  .infoContainer {
+    width: 400px;
+  }
+  .portfolioContainer {
+    width: 100%;
+  }
+  .portfolioPic2 {
+    float: left;
+  }
+  .portfolioPic4 {
+    float: left;
+  }
+  .profileSocial {
+    width: 225px;
+    margin-right: 22%;
+  }
+  input {
+    width: 385px;
+  }
+  textarea {
+    width: 390px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .content {
+    width: 750px;
+  }
+  .infoContainer {
+    position: static;
+    width: 600px;
+  }
+  .profileSocial {
+    position: static;
+    float: left;
+    margin-top: 30px;
+    width: 620px;
+    margin-bottom: 80px;
+  }
+  .socialHeading {
+    width: 100%;
+    text-align: left;
+  }
+  input {
+    width: 585px;
+  }
+  textarea {
+    width: 590px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  h1 {
+    width: 100%;
+    margin: 0px;
+    font-size: 20px;
+    padding: 10px;
+  }
+  .indexPosition {
+    position: static;
+  }
+  .contactFix {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 15%;
+  }
+  .aboutFix {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    float: left;
+    margin-left: 15%;
+  }
+  .portfolioFix {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20%;
+    margin-left: 10%;
+  }
+  .content {
+    width: 620px;
+    position: static;
+  }
+  .infoContainer {
+    position: static;
+    width: 430px;
+  }
+  .profilePic {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+  .profileSocial {
+    position: static;
+    float: left;
+    margin-top: 30px;
+    width: 450px;
+    margin-bottom: 80px;
+  }
+  .socialHeading {
+    width: 100%;
+    text-align: left;
+  }
+  header {
+    position: static;
+  }
+  input {
+    width: 415px;
+  }
+  textarea {
+    width: 420px;
+  }
 }
 
 

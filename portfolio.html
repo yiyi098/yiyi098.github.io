@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 
 <html lang="eng-us">
@@ -6,62 +7,96 @@
   <meta charset="UTF-8">
   <title>Denis Wu's Portfolio</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy"
+    crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body background="assets/images/dust_scratches_background.png">
 
-<header>
-  <h1>Denis Wu</h1>
-  <div class="indexPosition">
-    <a class="contactFix" href="contact.html">Contact</a>
-    <a class="portfolioFix" href="portfolio.html">Portfolio</a>
-    <a class="aboutFix" href="index.html">About</a>
-  </div>
-</header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light NavHeaderBar">
+    <a class="navbar NavHeaderName" href="#">Denis Wu</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto mr-5">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">About</a>
+        </li>
+        <li class="nav-item portfolioFix">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 
-<section class="content">
-  <aside class="infoContainer clearfix"> 
-    <h2 class="heading">Portfolio</h2>
-    <div class="portfolioContainer">
-      <div class="portfolioPic1">
-        <img src="assets/images/harrypotter.png" alt="Harry Potter TriviaGame" width="100%" length="100%">
-        <a href="https://yiyi098.github.io/TriviaGame/" class="portfolioPicDescription">Harry Potter Trivia!</a>
+  <section class="container" style="margin-bottom: 15%;">
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="card" style="margin-top: 40px; padding: 20px;">
+          <h2 class="card-title heading">Portfolio</h2>
+
+          <div class="row">
+
+            <div class="col-sm-6 container-fluid text-black">
+              <img class="card-img img-fluid" src="assets/images/harrypotter.png" alt="Harry Potter TriviaGame" width="100%" length="100%">
+              <h5 class="card-title portfolioPicDescription">
+                <a href="https://yiyi098.github.io/TriviaGame/">Harry Potter Trivia!</a>
+              </h5>
+            </div>
+
+            <div class="col-sm-6 container-fluid text-black">
+              <img class="card-img img-fluid" src="assets/images/GifTastic.jpg" alt="GifTastic" width="100%" length="100%">
+              <h5 class="card-title portfolioPicDescription">
+                <a href="https://yiyi098.github.io/Giphy/">Giphy</a>
+              </h5>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="col-sm-6 container-fluid text-black">
+              <img class="card-img img-fluid" src="assets/images/trainScheduler.jpg" alt="Train Scheduler" width="100%" length="100%">
+              <h5 class="card-title portfolioPicDescription">
+                <a href="https://yiyi098.github.io/Train-Scheduler/">Giphy</a>
+              </h5>
+            </div>
+
+          </div>
+
+        </div>
       </div>
-      <div class="portfolioPic2">
-        <img src="assets/images/GifTastic.jpg" alt="GifTastic" width="100%" length="100%">
-        <a href="https://yiyi098.github.io/Week-6-GifTastic-API/" class="portfolioPicDescription">GifTastic</a>
-      </div>
-      <div class="portfolioPic3">
-        <img src="assets/images/trainScheduler.jpg" alt="Train Scheduler" width="100%" length="100%">
-        <a href="https://yiyi098.github.io/Train-Scheduler/" class="portfolioPicDescription">Train Scheduler</a>
-      </div>
-      <div class="portfolioPic4">
-        <img src="assets/images/Software.jpg" alt="softwarePic" width="100%" length="100%">
-        <a href="#" class="portfolioPicDescription">Software</a>
+
+      <div class="col-lg-4" style="margin-top: 20px;">
+        <div class="card" style="margin: 21px;">
+          <div class="card-body">
+            <h3 class="card-title socialHeading">Connect with Me</h3>
+            <div class="row">
+              <a class="card-img-bottom col-sm-4" href="https://github.com/yiyi098" target="_blank">
+                <img style="width: 100%;" src="assets/images/icons/if_github_401441.png" alt="Github icon" >
+              </a>
+              <a class="card-img-bottom col-sm-4" href="https://www.linkedin.com/in/denis-wu-000/" target="_blank">
+                <img style="width: 100%;" class="indivIcon" href="" src="assets/images/icons/if_social-linkedin-square1_771369.png" alt="LinkedIn icon">
+              </a>
+              <a class="card-img-bottom col-sm-4" href="https://stackoverflow.com/users/9105445/denis-wu?tab=profile" target="_blank">
+                <img style="width: 100%;" class="indivIcon" href="" src="assets/images/icons/if_stackoverflow_273179.png" alt="Stackoverflow icon">
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </aside>
-  
-  <aside class="profileSocial">
-    <h3 class="socialHeading">Connect with Me</h3>
-    <div class="icons">
-      <a href="https://github.com/yiyi098" target="_blank">
-        <img class="indivIcon" href="" src="assets/images/icons/if_github_401441.png" alt="Github icon" width="60px" length="60px">
-      </a>
-      <a href="https://www.linkedin.com/in/denis-wu-727b12154/" target="_blank">
-        <img class="indivIcon" href="" src="assets/images/icons/if_social-linkedin-square1_771369.png" alt="LinkedIn icon" width="60px" length="60px">
-      </a>
-      <a href="https://stackoverflow.com/users/9105445/denis-wu?tab=profile" target="_blank">
-        <img class="indivIcon" href="" src="assets/images/icons/if_stackoverflow_273179.png" alt="Stackoverflow icon" width="60px" length="60px">
-      </a>
-    </div>
-  </aside>
-</section>
+  </section>
 
-<footer>
-  © Copyright 2018 Denis Wu
-</footer>
+  <footer class="col-lg-12" style="text-align: center">
+    © Copyright 2018 Denis Wu
+  </footer>
 
 </body>
 

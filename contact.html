@@ -6,57 +6,84 @@
   <meta charset="UTF-8">
   <title>Denis Wu's Contact</title>
   <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body background="assets/images/dust_scratches_background.png">
 
-<header>
-  <h1>Denis Wu</h1>
-  <div class="indexPosition">
-    <a class="contactFix" href="contact.html">Contact</a>
-    <a class="portfolioFix" href="portfolio.html">Portfolio</a>
-    <a class="aboutFix" href="index.html">About</a>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light NavHeaderBar">
+  <a class="navbar NavHeaderName" href="#">Denis Wu</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+    aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto mr-5">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">About</a>
+      </li>
+      <li class="nav-item portfolioFix">
+        <a class="nav-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
   </div>
-</header>
+</nav>
 
-<section class="content">
-  <aside class="infoContainer clearfix"> 
-    <h2 class="heading">Contact</h2>
-    <form class="formFormatting">
-      Name
-      <br>
-      <input height="20px" type="text" name="Name" value="John Smith" size="72">
-      <br>
-      Email
-      <br>
-      <input type="text" name="Email" value="example@gmail.com" size="72">
-      <br>
-      Message
-      <br>
-      <textarea name="message" rows="15" cols="95"></textarea>
-      <br>
-      <input class="button" type="submit" value="Submit">
-    </form>
-  </aside>
+<section class="container" style="margin-bottom: 15%;">
+  <div class="row">
+    <div class="col-lg-8" style="margin-top: 40px;">
+      <div class="card text-black" style="padding: 20px;">
+        <h2 class="card-title heading">Contact</h2>
+        <form>
 
-  <aside class="profileSocial">
-    <h3 class="socialHeading">Connect with Me</h3>
-    <div class="icons">
-      <a href="https://github.com/yiyi098" target="_blank">
-        <img class="indivIcon" href="" src="assets/images/icons/if_github_401441.png" alt="Github icon" width="60px" length="60px">
-      </a>
-      <a href="https://www.linkedin.com/in/denis-wu-727b12154/" target="_blank">
-        <img class="indivIcon" href="" src="assets/images/icons/if_social-linkedin-square1_771369.png" alt="LinkedIn icon" width="60px" length="60px">
-      </a>
-      <a href="https://stackoverflow.com/users/9105445/denis-wu?tab=profile" target="_blank">
-        <img class="indivIcon" href="" src="assets/images/icons/if_stackoverflow_273179.png" alt="Stackoverflow icon" width="60px" length="60px">
-      </a>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlInput2">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="example@gmail.com">
+          </div>
+
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          </div>
+
+          <button type="submit" class="button">Submit</button>
+
+        </form>
+      </div>
     </div>
-  </aside>
+
+    <div class="col-lg-4" style="margin-top: 20px;">
+      <div class="card" style="margin: 21px;">
+        <div class="card-body">
+          <h3 class="card-title socialHeading">Connect with Me</h3>
+          <div class="row">
+            <a class="card-img-bottom col-sm-4" href="https://github.com/yiyi098" target="_blank">
+              <img style="width: 100%;" src="assets/images/icons/if_github_401441.png" alt="Github icon">
+            </a>
+            <a class="card-img-bottom col-sm-4" href="https://www.linkedin.com/in/denis-wu-000/" target="_blank">
+              <img style="width: 100%;" class="indivIcon" href="" src="assets/images/icons/if_social-linkedin-square1_771369.png" alt="LinkedIn icon">
+            </a>
+            <a class="card-img-bottom col-sm-4" href="https://stackoverflow.com/users/9105445/denis-wu?tab=profile" target="_blank">
+              <img style="width: 100%;" class="indivIcon" href="" src="assets/images/icons/if_stackoverflow_273179.png" alt="Stackoverflow icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<footer>
+<footer class="col-lg-12" style="text-align: center">
   © Copyright 2018 Denis Wu
 </footer>
 
